@@ -1,0 +1,16 @@
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+# virtual environment names often start with 'venv' or 'env'
+
+# IDE specific ignores (for VS Code)
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db
