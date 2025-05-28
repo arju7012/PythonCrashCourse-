@@ -36,4 +36,4 @@ restaurant_2.describe_restaurant()
 restaurant_3 = Restaurant('WoW Momos', 'Chineese')
 restaurant_3.describe_restaurant()
 restaurant_4 = Restaurant('Thossai', 'Indian veg')
-restaurant_4.describe_restaurant()"""
+restaurant_4.describe_restaurant()""" 
