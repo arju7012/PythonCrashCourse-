@@ -20,21 +20,27 @@ class Users:
     def reset_login_attempts(self):
         self.login_attempts = 0
 
-class Admin(Users):
-    """Showing privilages of admin."""
-
-    def __init__(self, first_name, last_name, username, mob_num):
-        super().__init__(first_name, last_name, username, mob_num)
+class Privileges:
+    def   __init__(self):
         self.privileges = []
-
+    
     def show_privileges(self):
         print("The privileges of admin are showned below.")
         for privilege in self.privileges:
             print(f"- He can {privilege}")
 
+class Admin(Users):
+    """Showing privilages of admin."""
+
+    def __init__(self, first_name, last_name, username, mob_num):
+        super().__init__(first_name, last_name, username, mob_num)
+        self.privileges = Privileges()
+
+    
+
 
 
 admin1 = Admin("sagar", "jacky", "sagaraliasjacky", 2255545)
-admin1.privileges = ["kill you", "set you free", "place in prison"]
+admin1.privileges.privileges = ["kill you", "set you free", "place in prison"]
 admin1.describe_user()
-admin1.show_privileges()
+admin1.privileges.show_privileges()

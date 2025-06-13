@@ -36,6 +36,7 @@ class IceCreamStand(Restaurant):
 club_ice = IceCreamStand("Club Ice")
 club_ice.flavors = ["fig", "mango", "grape", "watermelon"]
 
+club_ice.set_number_served(15)
 club_ice.describe_restaurant()
 club_ice.show_flavors()
 
